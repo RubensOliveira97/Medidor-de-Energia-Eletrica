@@ -1,0 +1,14 @@
+body{
+    display:flex;
+    flex:1;
+    min-height: 85vh;
+    flex-direction:column;
+    /* background-color: black; */
+}
+app-footer{
+    /* background-color: blue; */
+}
+
+/* router-outlet{
+    flex:1
+} */

@@ -1,0 +1,13 @@
+<div class="card-deck justify-content-center align-items-center d-flex m-5">
+  <div class="card" *ngFor="let equipment of equipments | async">
+    
+    <div class="card-body" >
+      <h5 class="card-title">{{equipment.name}}</h5>
+      <p class="card-text">{{equipment.onOff?"ON":"OFF"}}</p>
+      <p class="card-text">{{equipment.power}} W</p>
+    </div>
+  </div>
+ 
+
+</div>
+

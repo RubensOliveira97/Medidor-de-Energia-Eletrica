@@ -1,0 +1,39 @@
+
+<div>
+    <form class="m-lg-2" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <labeL>Nome</labeL>
+            <input type="text" class="form-control" [(ngModel)]="equipment.name" name="nome"/>
+        </div>
+    
+        <div class="form-group">
+            <labeL>Potencia Nominal</labeL>
+            <input type="text" class="form-control" [(ngModel)]="equipment.power" name="potencia"/>
+        </div>
+
+        <div class="form-group">
+            <labeL>Pino Cadastrado</labeL>
+            <input type="text" class="form-control" [(ngModel)]="equipment.pin" name="pinocadastrado"/>
+        </div>
+    
+        <button type="submit" class="btn btn-primary mt-2">Salvar</button>
+    </form>
+</div>
+
+<div class="card-header">
+    <p class="display-6 justify-content-center align-items-center d-flex"> Equipamentos Cadastrados </p>
+</div>
+<div class="card mt-2" *ngFor="let equipment of equipments | async">
+    <div id="features" class="card-body">
+        <h5 class="card- title">{{equipment.name}}</h5>
+        <label>Potência Nominal:</label>
+        <p class="card-text">{{equipment.power}}W</p>
+        <label>Pino Cadastrado:</label>
+        <p class="card-text">{{equipment.pin}}</p>
+        <label>Estado:</label>
+        <p class="card-text">{{equipment.onOff?"ON":"OFF"}}</p>
+    </div>
+    <div class="card-footer">
+        <button type="button" class="btn btn-danger ml-2" (click)="delete(equipment.key)">Excluir</button>
+    </div>
+</div>
