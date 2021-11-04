@@ -6,7 +6,7 @@ O projeto tem como intuito exibir o consumo de energiar em tempo real, por meio 
 
 ## Development server
 
-Use o comando `ng serve` para executar o projeto localmente. Navegue em `http://localhost:4200/`. O app vai atualizar automaticamente em caso de alterações no código.
+Use o comando `ng serve`(É necessário instalar o Angular CLI ==> npm install -g @angular/cli) para executar o projeto localmente. Navegue em `http://localhost:4200/`. O app vai atualizar automaticamente em caso de alterações no código.
 
 
 
