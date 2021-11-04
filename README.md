@@ -2,26 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.0.
 
+O projeto tem como intuito exibir o consumo de energiar em tempo real, por meio de envio de dados de um ESP32 para um banco de dados de tempo real do FireBase. Os equipamentos são cadastrados diretamente no front-end, e sua propriedade de on/off deve ser manipulada pelo ESP32 ou plataforma de desenvolvimento compatível. Em caso de execução de somente o front-end, a manipulação da variável deve ser feita diretamente no banco de dados. Portanto é aconselhável apontamento para banco de dados próprio. Para facilitar os testes, deixo 3 equipamentos já cadastrados com onOff setado como true.
+
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Use o comando `ng serve` para executar o projeto localmente. Navegue em `http://localhost:4200/`. O app vai atualizar automaticamente em caso de alterações no código.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
