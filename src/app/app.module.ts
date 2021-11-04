@@ -36,6 +36,6 @@ import { AboutComponent } from './components/about/about.component';
 
   ],
   providers: [],
-  bootstrap: [AppComponent,NavbarComponent,RealTimeComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

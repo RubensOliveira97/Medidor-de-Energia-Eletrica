@@ -12,7 +12,4 @@ export class EquipmentDataService {
 
   constructor() { }
 
-  // changeEquipment(equipment: Equipment, key: string) {
-  //   this.equipmentSource.next({ equipment: equipment, key: key });
-  // }
 }

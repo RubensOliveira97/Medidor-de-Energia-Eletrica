@@ -1,5 +1,5 @@
 <div class="card-deck justify-content-center align-items-center d-flex m-5">
-  <div class="card" *ngFor="let equipment of equipments | async">
+  <div class="card" *ngFor="let equipment of equipmentsData ">
     
     <div class="card-body" >
       <h5 class="card-title">{{equipment.name}}</h5>
@@ -8,6 +8,10 @@
     </div>
   </div>
  
-
+  <div class="card-body" >
+    <h5 class="card-title">Consumo Instantâneo</h5>
+    
+    <p class="card-text">{{onPowers}} Wh</p>
+  </div>
 </div>
 

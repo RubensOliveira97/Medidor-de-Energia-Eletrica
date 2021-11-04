@@ -7,7 +7,7 @@ import { AboutComponent } from './components/about/about.component';
 import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  { path:'home',component:HomeComponent},
+  { path:'',component:HomeComponent},
   { path:'monitor',component:RealTimeComponent},
   { path:'insert-equip', component:InsertEquipComponent},
   { path:'about', component:AboutComponent},
